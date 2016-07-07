@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
 
@@ -23,12 +24,13 @@ class PlaySoundsViewController: UIViewController {
     var audioFile: AVAudioFile!
     var audioEngine: AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
+    var stopTimer: Timer!
 
     enum ButtonType: Int {case Slow = 0, Fast, Chipmunk,
                           Vader, Echo, Reverb }
 
-    override func viewWillAppear(animated: Bool) {
-        configureUI(.NotPlaying)
+    override func viewWillAppear(_ animated: Bool) {
+        configureUI(playState: .NotPlaying)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

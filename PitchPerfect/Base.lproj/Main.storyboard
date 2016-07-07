@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
         </scene>
-        <!--Play Sound View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="lPb-Fw-zOn">
             <objects>
-                <viewController id="Ep7-Vj-jFv" customClass="PlaySoundViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ep7-Vj-jFv" customClass="PlaySoundsViewController" customModule="PitchPerfect" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NJ0-wp-V0B"/>
                         <viewControllerLayoutGuide type="bottom" id="Qac-eZ-OH7"/>
