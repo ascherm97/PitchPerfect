@@ -1,5 +1,5 @@
 //
-//  PlaySoundViewController.swift
+//  PlaySoundsViewController.swift
 //  PitchPerfect
 //
 //  Created by Michel Jordan Valencia Rangel on 7/6/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlaySoundViewController: UIViewController {
+class PlaySoundsViewController: UIViewController {
     
     
     @IBOutlet weak var slowButton: UIButton!

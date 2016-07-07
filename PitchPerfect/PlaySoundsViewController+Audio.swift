@@ -37,7 +37,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         print("Audio has been setup")
     }
     
-    func playSound(rate rate: Float? = nil, pitch: Float? = nil, echo: Bool = false, reverb: Bool = false) {
+    func playSound(rate: Float? = nil, pitch: Float? = nil, echo: Bool = false, reverb: Bool = false) {
         
         // initialize audio engine components
         audioEngine = AVAudioEngine()
