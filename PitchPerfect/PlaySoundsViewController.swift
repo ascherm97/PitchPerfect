@@ -46,21 +46,21 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
-        //        switch ButtonType(rawValue: sender.tag)! {
-        //            case .Slow:
-        //                playSound(rate : 0.50)
-        //            case .Fast:
-        //                playSound(rate : 1.50)
-        //            case .Chipmunk:
-        //                playSound(pitch: 1000)
-        //            case .Vader:
-        //                playSound(pitch: -1000)
-        //            case .Echo:
-        //                playSound(echo: true)
-        //            case .Reverb:
-        //                playSound(reverb: true)
-        //        }
-        //        configureUI(playState: .Playing)
+                switch ButtonType(rawValue: sender.tag)! {
+                    case .Slow:
+                        playSound(rate : 0.50)
+                    case .Fast:
+                        playSound(rate : 1.50)
+                    case .Chipmunk:
+                        playSound(pitch: 1000)
+                    case .Vader:
+                        playSound(pitch: -1000)
+                    case .Echo:
+                        playSound(echo: true)
+                    case .Reverb:
+                        playSound(reverb: true)
+                }
+                configureUI(playState: .Playing)
         print("\(sender.titleLabel) Pressed")
     }
     @IBAction func stopButtonPressed(_ sender: UIButton) {

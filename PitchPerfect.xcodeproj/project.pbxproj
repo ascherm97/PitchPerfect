@@ -101,12 +101,12 @@
 		4431EC141D2D74DC009F4D3B /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
-				44EAA1ED1D2F043000D4E4D3 /* PlaySoundsViewController+Audio.swift */,
-				44EAA1F31D2F2AB900D4E4D3 /* PlaySoundsViewController.swift */,
+				4431EC1C1D2D74DC009F4D3B /* Assets.xcassets */,
 				4431EC151D2D74DC009F4D3B /* AppDelegate.swift */,
+				44EAA1F31D2F2AB900D4E4D3 /* PlaySoundsViewController.swift */,
+				44EAA1ED1D2F043000D4E4D3 /* PlaySoundsViewController+Audio.swift */,
 				4431EC171D2D74DC009F4D3B /* RecordSoundsViewController.swift */,
 				4431EC191D2D74DC009F4D3B /* Main.storyboard */,
-				4431EC1C1D2D74DC009F4D3B /* Assets.xcassets */,
 				4431EC1E1D2D74DC009F4D3B /* LaunchScreen.storyboard */,
 				4431EC211D2D74DC009F4D3B /* Info.plist */,
 			);

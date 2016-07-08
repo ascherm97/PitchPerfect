@@ -78,14 +78,12 @@
                                                 <state key="normal" title="Slow"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="5qg-VL-PLB"/>
-                                                    <action selector="pressedButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="tIg-PZ-D2X"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-0J-RYw">
                                                 <state key="normal" title="Fast"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="xVT-YA-eGb"/>
-                                                    <action selector="pressedButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="x88-4H-uDJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -96,14 +94,12 @@
                                                 <state key="normal" title="Chipmunk"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="wqA-WW-NZY"/>
-                                                    <action selector="pressedButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="wQG-CU-OvG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJK-oh-x10">
                                                 <state key="normal" title="Vader"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="KOd-gQ-p3v"/>
-                                                    <action selector="pressedButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="xMT-zh-vEW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -114,14 +110,12 @@
                                                 <state key="normal" title="Echo"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="kgd-DW-Gwq"/>
-                                                    <action selector="pressedButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="QTp-1z-Vly"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA3-a3-Jvi">
                                                 <state key="normal" title="Reverb"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="Lkb-BZ-hh1"/>
-                                                    <action selector="pressedButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="mdM-Gt-xZI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -131,9 +125,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-e3-y0L">
                                                 <state key="normal" title="Stop"/>
                                                 <connections>
-                                                    <action selector="pressedButton:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="8dp-Py-lIZ"/>
-                                                    <action selector="stopButtonPressed:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="xeS-bK-Gpt"/>
-                                                    <action selector="stopButtonPressedd:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="cTE-pH-ceC"/>
+                                                    <action selector="stopButtonPressed:" destination="Ep7-Vj-jFv" eventType="touchUpInside" id="hrb-B2-NNW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
