@@ -37,6 +37,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         print("Audio has been setup")
     }
     
+    //TODO Fix this function
     func playSound(rate: Float? = nil, pitch: Float? = nil, echo: Bool = false, reverb: Bool = false) {
         
         // initialize audio engine components
@@ -80,10 +81,11 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         
         // schedule to play and start the engine!
         audioPlayerNode.stop()
-        audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: {
+        audioPlayerNode.scheduleFile(_ : audioFile, at: nil) {
             var delayInSeconds: Double = 0
             
-            if let lastRenderTime = self.audioPlayerNode.lastRenderTime, let playerTime = self.audioPlayerNode.playerTime(forNodeTime: lastRenderTime) {
+            if  let lastRenderTime = self.audioPlayerNode.lastRenderTime,
+                let playerTime = self.audioPlayerNode.playerTime(forNodeTime: lastRenderTime) {
                 
                 if let rate = rate {
                     delayInSeconds = Double(self.audioFile.length - playerTime.sampleTime) / Double(self.audioFile.processingFormat.sampleRate) / Double(rate)
@@ -95,7 +97,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
             // schedule a stop timer for when audio finishes playing
             self.stopTimer = Timer(timeInterval: delayInSeconds, target: self, selector: #selector(PlaySoundsViewController.stopAudio), userInfo: nil, repeats: false)
             RunLoop.main().add(self.stopTimer!, forMode: RunLoopMode.defaultRunLoopMode)
-        })
+        }
         
         do {
             try audioEngine.start()
@@ -140,12 +142,13 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
 
     func configureUI(playState: PlayingState) {
         switch(playState) {
-        case .Playing:
-            setPlayButtonsEnabled(enabled: false)
-            stopButton.isEnabled = true
-        case .NotPlaying:
-            setPlayButtonsEnabled(enabled: true)
-            stopButton.isEnabled = false
+            case .Playing:
+                setPlayButtonsEnabled(enabled: false)
+                stopButton.isEnabled = true
+                print ("I'm playing something")
+            case .NotPlaying:
+                setPlayButtonsEnabled(enabled: true)
+                stopButton.isEnabled = false
         }
     }
     
